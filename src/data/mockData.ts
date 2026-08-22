@@ -1,0 +1,102 @@
+import type { City, ActivityCatalogItem } from '../types';
+
+export const POPULAR_CITIES: City[] = [
+  {
+    id: 'city_goa',
+    name: 'Goa',
+    country: 'India',
+    countryCode: 'IN',
+    region: 'Western India',
+    image: 'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=800&auto=format&fit=crop&q=80',
+    description: 'Sun-kissed beaches, Portuguese heritage, nightlife, and tropical coastal charm.',
+    tags: ['Beaches', 'Water Sports', 'Nightlife'],
+    averageDailyBudget: 3500,
+    topActivitiesCount: 18,
+    latitude: 15.2993,
+    longitude: 74.1240,
+  },
+  {
+    id: 'city_jaipur',
+    name: 'Jaipur',
+    country: 'India',
+    countryCode: 'IN',
+    region: 'Northern India',
+    image: 'https://images.unsplash.com/photo-1477587458883-47145ed94245?w=800&auto=format&fit=crop&q=80',
+    description: 'The Pink City famous for royal palaces, hilltop forts, and bustling handicraft markets.',
+    tags: ['Heritage', 'Forts', 'Culture'],
+    averageDailyBudget: 2800,
+    topActivitiesCount: 22,
+    latitude: 26.9124,
+    longitude: 75.7873,
+  },
+  {
+    id: 'city_udaipur',
+    name: 'Udaipur',
+    country: 'India',
+    countryCode: 'IN',
+    region: 'Western India',
+    image: 'https://images.unsplash.com/photo-1615836245337-f5b9b2303f10?w=800&auto=format&fit=crop&q=80',
+    description: 'City of Lakes, grand royal palaces, and romantic boat rides on Lake Pichola.',
+    tags: ['Lakes', 'Romance', 'Palaces'],
+    averageDailyBudget: 3200,
+    topActivitiesCount: 16,
+    latitude: 24.5854,
+    longitude: 73.7125,
+  },
+  {
+    id: 'city_manali',
+    name: 'Manali',
+    country: 'India',
+    countryCode: 'IN',
+    region: 'Northern India',
+    image: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800&auto=format&fit=crop&q=80',
+    description: 'High altitude Himalayan mountain valley known for adventure sports and pine forests.',
+    tags: ['Mountains', 'Adventure', 'Snow'],
+    averageDailyBudget: 2500,
+    topActivitiesCount: 20,
+    latitude: 32.2396,
+    longitude: 77.1887,
+  }
+];
+
+export const CITY_ACTIVITIES: ActivityCatalogItem[] = [
+  {
+    id: 'act_1',
+    cityId: 'city_goa',
+    title: 'Scuba Diving & Watersports at Grand Island',
+    description: 'Explore vibrant coral reefs and marine life with professional instructors.',
+    category: 'adventure',
+    cost: 2499,
+    durationMinutes: 240,
+    rating: 4.9,
+    reviewCount: 850,
+    image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&auto=format&fit=crop&q=80',
+    locationName: 'Grand Island, Goa'
+  },
+  {
+    id: 'act_2',
+    cityId: 'city_jaipur',
+    title: 'Amber Fort Guided Heritage Tour',
+    description: 'Explore the grand Rajput architecture, Sheesh Mahal, and panoramic hilltop ramparts.',
+    category: 'sightseeing',
+    cost: 800,
+    durationMinutes: 180,
+    rating: 4.8,
+    reviewCount: 1420,
+    image: 'https://images.unsplash.com/photo-1477587458883-47145ed94245?w=600&auto=format&fit=crop&q=80',
+    locationName: 'Amer, Jaipur'
+  },
+  {
+    id: 'act_3',
+    cityId: 'city_udaipur',
+    title: 'Sunset Boat Cruise on Lake Pichola',
+    description: 'Witness the golden hour reflection across City Palace and Jag Mandir island.',
+    category: 'nature',
+    cost: 750,
+    durationMinutes: 60,
+    rating: 4.9,
+    reviewCount: 920,
+    image: 'https://images.unsplash.com/photo-1615836245337-f5b9b2303f10?w=600&auto=format&fit=crop&q=80',
+    locationName: 'Rameshwar Ghat, Udaipur'
+  }
+];
